@@ -1,5 +1,5 @@
 
-package activity6;
+
 import java.util.Scanner;
 public class Grade {
 static void print(String printResult){
