@@ -1,5 +1,5 @@
 
-public class LabradorKen {
+public class Method_Labrador {
     static int AdditionMethod(int x, int y){
         return x+y;
     }
@@ -26,5 +26,5 @@ public class LabradorKen {
 
 
 }
-    
+   
 }
