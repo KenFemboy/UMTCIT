@@ -5,7 +5,7 @@ public class GradeAverage {
         Scanner input = new Scanner(System.in);
         int[] grade = new int[4];
 
-        System.out.println("Calcute Grade average");   
+        System.out.println("Calculate Grade average");   
         System.out.println("Enter first grade");
         grade[0] = input.nextInt();
         System.out.println("Enter second grade");
