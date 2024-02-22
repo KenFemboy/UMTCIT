@@ -22,6 +22,11 @@ public class Method_Labrador {
     static int DivisionMethod(int x, int y){
         return x/y;
     }
+     static int AverageMethod(int x, int y){
+        return (x+y)/2;
+    }
+    
+
    public static void main(String[] args){
     Scanner input = new Scanner(System.in);
     System.out.println("Enter first num ");
@@ -34,6 +39,8 @@ public class Method_Labrador {
     System.out.println("[B] Subtraction ");
     System.out.println("[C] Multiplication ");
     System.out.println("[D] Division ");
+    System.out.println("[E] Average ");
+
     char selected = input.next().toLowerCase().charAt(0);
 
     switch (selected) {
@@ -60,9 +67,15 @@ public class Method_Labrador {
         int Quotient = DivisionMethod(num1, num2);
         System.out.println("The Quotient of " + num1 + " and " + num2 +" is " + Quotient);
         }
-        default:
+
+        case 'e':
+        int Average = AverageMethod(num1, num2);
+        System.out.println("The Average of " + num1 + " and " + num2 +" is " + Average);
+        break;
         
-            break;
+        default:
+            System.out.println("Error Occured try again");
+            restart('y');
     }
     System.out.println("Would you like to restart the program? [Y/N]");
     char tryagain = input.next().toLowerCase().charAt(0);
