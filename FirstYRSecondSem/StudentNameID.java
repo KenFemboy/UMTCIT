@@ -26,6 +26,8 @@ public static void main(String[] args) {
     System.out.println("Select one \n[1]Student ID \n[2]Name\n[3]ID and Names");
     int choice = input.nextInt();
     
+
+
     if(choice == 1){
        System.out.println("Student ID's ");
        for(String[] studentname: student){
