@@ -10,18 +10,13 @@ public class ArraySum {
         int array[][] = new int[row][col];
         
         
-        
-        System.out.println("Input num 1");
-        array[0][0] = input.nextInt();
-
-        System.out.println("Input num 2");
-        array[0][1] = input.nextInt();
-        
-        System.out.println("Input num 3");
-        array[1][0] = input.nextInt();
-        
-        System.out.println("Input num 4");
-        array[1][1] = input.nextInt();
+        for(int i=0; i < array.length; i++){
+            for(int j = 0; j < array[i].length; j++){
+            System.out.println("Input num on row " + (i+1) + " Column " + (j+1));
+            array[i][j] = input.nextInt();
+            }
+        }
+    
         
       
 
@@ -34,6 +29,6 @@ public class ArraySum {
                 sum += array[i][j];
             }
     }
-    System.out.println(sum);
+    System.out.println("The total sum of all variable is "+sum);
 }
 }
