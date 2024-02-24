@@ -6,14 +6,14 @@ public class ArraySum {
 
 
 
-        // para sa row and column
+        
         System.out.println("Input Row");
         int row = input.nextInt();
         System.out.println("Input Column");
         int col = input.nextInt();
         int array[][] = new int[row][col];
         
-        // loop para sa mga input 
+       
         for(int i=0; i < array.length; i++){
             for(int j = 0; j < array[i].length; j++){
             System.out.println("Input num on row " + (i+1) + " Column " + (j+1));
@@ -21,7 +21,7 @@ public class ArraySum {
             }
         }
 
-        // loop para ma add tanan variable
+        
         int sum = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -30,5 +30,6 @@ public class ArraySum {
             }
     }
     System.out.println("The total sum of all variable is "+sum);
+    // Labrador
 }
 }
