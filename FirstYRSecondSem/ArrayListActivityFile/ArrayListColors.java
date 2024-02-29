@@ -1,4 +1,4 @@
-package ArrayListActivityFile;
+
 import java.util.ArrayList;
 public class ArrayListColors{
 public static void main(String[] args) {
@@ -14,4 +14,5 @@ public static void main(String[] args) {
 
     System.out.println(colors);
 
-}}
+}
+}

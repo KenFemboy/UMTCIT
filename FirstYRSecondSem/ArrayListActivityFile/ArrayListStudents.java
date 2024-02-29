@@ -1,4 +1,4 @@
-package ArrayListActivityFile;
+
 import java.util.*;
 
 
