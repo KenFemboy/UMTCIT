@@ -1,3 +1,4 @@
+package ArrayListActivityFile;
 import java.util.ArrayList;
 
 public class ArrayListColorsSwitch {
