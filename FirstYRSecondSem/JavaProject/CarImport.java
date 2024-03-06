@@ -8,8 +8,8 @@ public class CarImport {
         Menu menu = new Menu();
         System.out.println("Welcome to Luxury Cars Import");
         
-        // menu.Login();
-        
+        menu.Login();
+        menu.CheckImports();
 
     }
 }
