@@ -21,7 +21,7 @@ public class CarImport {
                 menu.Purchase();
                 break;
             case 2:
-
+                menu.CheckCashBalance();
                 break;
 
             case 3:

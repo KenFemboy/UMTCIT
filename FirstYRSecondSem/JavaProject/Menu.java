@@ -7,8 +7,21 @@ public class Menu {
     Scanner input = new Scanner(System.in);
     Cars cars = new Cars();
     PaymentMethods paymentMethods = new PaymentMethods();
+    
+    void returnMainMenu(){
+        System.out.println("Would you like to return to the main menu?");
+        System.out.println("Yes / No");
 
+        char choice = input.next().toLowerCase().charAt(0);
+        if(choice == 'y'){
+            CarImport.main(null);
+        }
+       else{
+            System.exit(0);
+       }
+    }
 
+     
     void Option(){
        System.out.println("[1] Check Imports");
        System.out.println("[2] Check Balance");
@@ -26,6 +39,20 @@ public class Menu {
         }
        
     }
+
+    void CheckCashBalance(){
+        System.out.print("Enter Username: ");
+            String username = input.nextLine();
+            input.nextLine();
+            System.out.print("Enter Password: ");
+            String password = input.nextLine();
+            cashBalance(username, password);
+
+            returnMainMenu();
+            
+    }
+
+
     void Login(){
         System.out.print("Enter Username: ");
             input.nextLine();
