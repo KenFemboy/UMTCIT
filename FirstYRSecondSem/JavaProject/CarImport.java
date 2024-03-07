@@ -11,9 +11,7 @@ public class CarImport {
         System.out.println("Welcome to Luxury Cars Import \n");
 
 
-        System.out.println("Please login with your account");
-
-        menu.Login();
+        
         menu.Option();
         
        int userinput = input.nextInt();
@@ -28,7 +26,7 @@ public class CarImport {
 
             case 3:
                 menu.Login();
-                
+
                 break;
             default:
             System.out.println("Invalid Input"+"\n");

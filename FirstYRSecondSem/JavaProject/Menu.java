@@ -12,24 +12,35 @@ public class Menu {
     void Option(){
        System.out.println("[1] Check Imports");
        System.out.println("[2] Check Balance");
-       System.out.println("[3] Switch User");
+       System.out.println("[3] Check Credit");
     }
     
-    
-    void Login(){
-        System.out.println("Enter Username: ");
-        String username = input.nextLine();
-        System.out.println("Enter Password: ");
-        String password = input.nextLine();
-
-        
-        if(paymentMethods.checkAccount(username, password) == false){
-            System.out.println("Input Error \n");
+    void cashBalance(String username, String password){
+        if(paymentMethods.checkAccount(username, password)){
+             paymentMethods.getBalanceCash(username);
+           
+        }
+        else{
+            System.out.println("Username and Password Error \n");
             Login();
         }
+       
+    }
+    void Login(){
+        System.out.print("Enter Username: ");
+            input.nextLine();
+            String username = input.nextLine();
+            System.out.print("Enter Password: ");
+            String password = input.nextLine();
+        
+        
+        
         
 
     }
+   
+
+
 
     void Purchase(){
         System.out.println("Select car to purchase: ");
@@ -37,15 +48,27 @@ public class Menu {
         System.out.println("Are you sure to purchase \n" + cars.getBrand(purchasenum - 1)
                            +" \nModel: " + cars.getModel(purchasenum - 1 )
                             + "\n$ " +  cars.getPrice(purchasenum - 1) +"\n");
-        System.out.println("Enter [ Yes ] to purchase / [ No ] to go back to car list");
-        String ans = input.nextLine();
-        if(ans == "Yes"){
-            
+        System.out.println("Enter [ 1 ] to purchase / [ 2 ] to go back to car list ");
+        int ans = input.nextInt();
+        if(ans == 1){
+            System.out.print("Enter Username: ");
+            input.nextLine();
+            String username = input.nextLine();
+            System.out.print("Enter Password: ");
+            String password = input.nextLine();
+            System.out.println("Enter payment method: [1] Cash [2] Credit");
+            int cash_credit = input.nextInt();
+            if(cash_credit == 1){
+                cashBalance(username, password);
+            }
+
         }
+        
         else{
             cars.CheckImports();
         }
-
         
     }
+
+    
 }

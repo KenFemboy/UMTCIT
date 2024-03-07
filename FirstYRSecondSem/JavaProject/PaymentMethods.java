@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PaymentMethods {
-   
+   private double balance;
     private ArrayList<String> accounts;
     private ArrayList<String> accountpass;
     private ArrayList<Double> cash;
@@ -41,7 +41,7 @@ public class PaymentMethods {
         cash= new ArrayList<>();
 
         cash.add(10000000000.0); //1
-        cash.add(10000000000.0);
+        cash.add(1000000.0);
         cash.add(10000000000.0);
         cash.add(10000000000.0);
         cash.add(10000000000.0);
@@ -81,5 +81,19 @@ public class PaymentMethods {
         
     }
 
+    public double getBalanceCash(String username){
+        if(accounts.contains(username) == true){
+            int index = accounts.indexOf(username);
+            System.out.println("Welcome " + username + " Your balance is " + cash.get(index));
+
+        }
+        
+        return balance;
+    }
+
+    public double receiptCredit(String username){
+
+        return balance;
+    }
     
 }
