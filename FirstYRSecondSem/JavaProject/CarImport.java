@@ -8,20 +8,13 @@ public class CarImport {
         Menu menu = new Menu();
         Cars cars = new Cars();
         PaymentMethods paymentMethods = new PaymentMethods();
-        System.out.println("Welcome to Luxury Cars Import");
+        System.out.println("Welcome to Luxury Cars Import \n");
+
+
         System.out.println("Please login with your account");
 
-        System.out.println("Enter Username: ");
-        String username = input.nextLine();
-        System.out.println("Enter Password: ");
-        String password = input.nextLine();
-
-        
-        if(paymentMethods.checkAccount(username, password) == false){
-            System.out.println("Input Error \n");
-            main(null);
-        }
-       menu.Option();
+        menu.Login();
+        menu.Option();
         
        int userinput = input.nextInt();
         switch (userinput) {
@@ -29,7 +22,14 @@ public class CarImport {
                 cars.CheckImports();
                 menu.Purchase();
                 break;
+            case 2:
 
+                break;
+
+            case 3:
+                menu.Login();
+                
+                break;
             default:
             System.out.println("Invalid Input"+"\n");
             main(null);

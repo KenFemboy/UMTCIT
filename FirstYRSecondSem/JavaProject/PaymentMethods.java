@@ -7,6 +7,9 @@ public class PaymentMethods {
    
     private ArrayList<String> accounts;
     private ArrayList<String> accountpass;
+    private ArrayList<Double> cash;
+    private ArrayList<Double> credit;
+
 
     public PaymentMethods(){
         accounts = new ArrayList<>();
@@ -34,6 +37,37 @@ public class PaymentMethods {
         accountpass.add("mael");
         accountpass.add("jove");
         accountpass.add("adie");
+
+        cash= new ArrayList<>();
+
+        cash.add(10000000000.0); //1
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);
+        cash.add(10000000000.0);//10
+        
+        credit = new ArrayList<>();
+
+        credit.add(100000000.0);//1
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);
+        credit.add(100000000.0);//10
+
+
+
+
 
     }
 

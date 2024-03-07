@@ -10,7 +10,7 @@ public class Cars {
    
 
 
-    Cars[] cars = new Cars[10];
+    Cars[] cars = new Cars[9];
     public Cars(){
     cars[0] = new Cars("Toyota", "Camry", 35390.0, "U.S");
     cars[1] = new Cars("Honda", "Civic", 23950.0, "Japan");
