@@ -9,13 +9,15 @@ public class CarImport {
         Cars cars = new Cars();
         System.out.println("Welcome to Luxury Cars Import");
         
-        //menu.Login();
+        
         
        menu.Option();
-        int userinput = input.nextInt();
+        
+       int userinput = input.nextInt();
         switch (userinput) {
             case 1:
                 cars.CheckImports();
+                menu.Purchase();
                 break;
 
             default:

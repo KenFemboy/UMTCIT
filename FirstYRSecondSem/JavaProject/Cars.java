@@ -37,6 +37,9 @@ public class Cars {
     public String getBrand() {
         return brand;
     }
+    public String getBrand(int i){
+        return cars[i].getBrand();
+    }
 
     public void setBrand(String brand) {
         this.brand = brand;
@@ -45,7 +48,9 @@ public class Cars {
     public String getModel() {
         return model;
     }
-
+    public String getModel(int i){
+        return cars[i].getModel();
+    }
     public void setModel(String model) {
         this.model = model;
     }
@@ -53,7 +58,10 @@ public class Cars {
     public double getPrice() {
         return price;
     }
-
+   
+    public double getPrice(int i){
+        return cars[i].getPrice();
+    }
     public void setPrice(double price) {
         this.price = price;
     }
