@@ -11,15 +11,29 @@ public class PaymentMethods {
     public PaymentMethods(){
         accounts = new ArrayList<>();
 
-        accounts.add("Ivan Bryll");
+        accounts.add("Ivan Bryll Joseco");
         accounts.add("Charles Kent");
-        accounts.add("Genevieve Herera");
+        accounts.add("Ian Barrientos ");
+        accounts.add("Gryxdane Maldo");
+        accounts.add("Jericho Diezma");
+        accounts.add("Kurt Iax Limos");
+        accounts.add("Ismael Baguilar");
+        accounts.add("Joven Rafael");
+        accounts.add("Adie Saludares");
+
+
 
 
         accountpass = new ArrayList<>();
         accountpass.add("ivan");
         accountpass.add("ken");
-        accountpass.add("gene");
+        accountpass.add("ian");
+        accountpass.add("gryx");
+        accountpass.add("jeri");
+        accountpass.add("kurt");
+        accountpass.add("mael");
+        accountpass.add("jove");
+        accountpass.add("adie");
 
     }
 
