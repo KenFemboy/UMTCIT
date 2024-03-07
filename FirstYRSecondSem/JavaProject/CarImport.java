@@ -7,10 +7,20 @@ public class CarImport {
         Scanner input = new Scanner(System.in);
         Menu menu = new Menu();
         Cars cars = new Cars();
+        PaymentMethods paymentMethods = new PaymentMethods();
         System.out.println("Welcome to Luxury Cars Import");
+        System.out.println("Please login with your account");
+
+        System.out.println("Enter Username: ");
+        String username = input.nextLine();
+        System.out.println("Enter Password: ");
+        String password = input.nextLine();
+
         
-        
-        
+        if(paymentMethods.checkAccount(username, password) == false){
+            System.out.println("Input Error \n");
+            main(null);
+        }
        menu.Option();
         
        int userinput = input.nextInt();
