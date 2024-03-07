@@ -7,12 +7,12 @@ public class Cars {
     private String model;
     private double price;
     private String country;
-    private int platenumber;
+   
 
 
     Cars[] cars = new Cars[10];
     public Cars(){
-    cars[0] = new Cars("Toyota", "Camry", 35390.0);
+    cars[0] = new Cars("Toyota", "Camry", 35390.0, "Sweden");
     cars[1] = new Cars("Honda", "Civic", 23950.0);
     cars[2] = new Cars("Ford", "Mustang", 36445.0);
     cars[4] = new Cars("Toyota", "Supra", 66370.0);
@@ -32,18 +32,22 @@ public class Cars {
             System.out.println("Make: " + cars[i].getBrand());
             System.out.println("Model: " + cars[i].getModel());
             System.out.println("Price: $" + cars[i].getPrice());
+            System.out.println("Country: " + cars[i].getCountry());
             System.out.println();
         }
     }  
 
     // Constructor
-    public Cars(String brand, String model, double price) {
+    public Cars(String brand, String model, double price, String country) {
         this.brand = brand;
         this.model = model;
         this.price = price;
+        this.country = country;
     }
 
     // Getters and setters
+
+    //set and get for (brand)
     public String getBrand() {
         return brand;
     }
@@ -55,6 +59,7 @@ public class Cars {
         this.brand = brand;
     }
 
+    //set and get for (model)
     public String getModel() {
         return model;
     }
@@ -65,6 +70,7 @@ public class Cars {
         this.model = model;
     }
 
+    //set and get for (price)
     public double getPrice() {
         return price;
     }
@@ -75,6 +81,18 @@ public class Cars {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    //set and get for (country)
+    public String getCountry() {
+        return country;
+    }
+    public String getCountry(int i){
+        return cars[i].getCountry();
+    }
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
 }
 
 

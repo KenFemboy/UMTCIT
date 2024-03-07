@@ -26,10 +26,10 @@ public class PaymentMethods {
     public boolean checkAccount(String username, String password){
         for (int i = 0; i < accounts.size(); i++) {
             if (username.equals(accounts.get(i)) && password.equals(accountpass.get(i))) {
-                return true; // Username and password match found
+                return true; 
             }
         }
-        return false; // No match found
+        return false; 
         
     }
 
