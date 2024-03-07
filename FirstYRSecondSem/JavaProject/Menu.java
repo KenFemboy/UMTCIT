@@ -55,7 +55,6 @@ public class Menu {
 
     void Login(){
         System.out.print("Enter Username: ");
-            input.nextLine();
             String username = input.nextLine();
             System.out.print("Enter Password: ");
             String password = input.nextLine();
