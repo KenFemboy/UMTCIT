@@ -35,35 +35,35 @@ public class PaymentMethods {
         accountpass.add("jeri");
         accountpass.add("kurt");
         accountpass.add("mael");
-        accountpass.add("jove");
+        accountpass.add("joven");
         accountpass.add("adie");
 
         cash= new ArrayList<>();
 
-        cash.add(10000000000.0); //1
+        cash.add(237420.0); //1
+        cash.add(700000.0);
+        cash.add(803920.0);
+        cash.add(8923000.0);
+        cash.add(1683200.0);
+        cash.add(9820.0);
         cash.add(1000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);
-        cash.add(10000000000.0);//10
+        cash.add(7892300.0);
+        cash.add(5000.0);
+        cash.add(700.0);//10
         
         credit = new ArrayList<>();
 
-        credit.add(100000000.0);//1
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);
-        credit.add(100000000.0);//10
+        credit.add(1000000.0);//1
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);
+        credit.add(1000000.0);//10
 
 
 
@@ -84,16 +84,28 @@ public class PaymentMethods {
     public double getBalanceCash(String username){
         if(accounts.contains(username) == true){
             int index = accounts.indexOf(username);
-            System.out.println("Welcome " + username + " Your balance is " + cash.get(index));
-
+            balance = cash.get(index);
+        }
+        
+        return balance;
+    }
+    
+    public double getBalanceCredit(String username){
+        if(accounts.contains(username) == true){
+            int index = accounts.indexOf(username);
+            balance = credit.get(index);
         }
         
         return balance;
     }
 
-    public double receiptCredit(String username){
-
-        return balance;
+    public boolean canAfford(double cash, double payment){
+        if(cash > payment){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
     
 }

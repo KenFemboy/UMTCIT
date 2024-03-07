@@ -25,7 +25,7 @@ public class CarImport {
                 break;
 
             case 3:
-                menu.Login();
+                menu.CheckCreditBalance();
 
                 break;
             default:
