@@ -1,5 +1,4 @@
 package JavaProject;
-
 import java.util.Scanner;
 
 public class CarImport {
@@ -8,10 +7,7 @@ public class CarImport {
         Menu menu = new Menu();
         Cars cars = new Cars();
         PaymentMethods paymentMethods = new PaymentMethods();
-        System.out.println("Welcome to Luxury Cars Import \n");
-
-
-        
+        System.out.println("Welcome to Luxury Cars Import \n"); 
         menu.Option();
         
        int userinput = input.nextInt();
@@ -33,8 +29,5 @@ public class CarImport {
             main(null);
                 break;
         }
-        
-
-
     }
 }

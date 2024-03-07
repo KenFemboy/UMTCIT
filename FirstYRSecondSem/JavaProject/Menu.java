@@ -175,12 +175,7 @@ public class Menu {
                 }
         }
         
-       void payCash(){
-
-       }
-       void payCredit(){
-        
-       }
+       
         
     }
 
