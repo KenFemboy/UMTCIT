@@ -15,12 +15,12 @@ public class Cars {
     cars[0] = new Cars("Toyota", "Camry", 35390.0, "U.S");
     cars[1] = new Cars("Honda", "Civic", 23950.0, "Japan");
     cars[2] = new Cars("Ford", "Mustang", 36445.0, "U.S");
-    cars[4] = new Cars("Toyota", "Supra", 66370.0, "Japan");
-    cars[5] = new Cars("Porsche", "911 Carrera GTS", 559400.0, "Germany");
-    cars[6] = new Cars("NISSAN", "GTR R34", 116641., "Japan");
-    cars[7] = new Cars("Toyota", "Trueno AE86", 20000.0, "Japan");
-    cars[8] = new Cars("Mazda", "RX-7 FD", 43158.0, "Japan");
-    cars[9] = new Cars("Honda", "NSX", 169500.0, "U.S");
+    cars[3] = new Cars("Toyota", "Supra", 66370.0, "Japan");
+    cars[4] = new Cars("Porsche", "911 Carrera GTS", 559400.0, "Germany");
+    cars[5] = new Cars("NISSAN", "GTR R34", 116641., "Japan");
+    cars[6] = new Cars("Toyota", "Trueno AE86", 20000.0, "Japan");
+    cars[7] = new Cars("Mazda", "RX-7 FD", 43158.0, "Japan");
+    cars[8] = new Cars("Honda", "NSX", 169500.0, "U.S");
    
 
 }
