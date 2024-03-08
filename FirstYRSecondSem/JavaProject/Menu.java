@@ -137,7 +137,7 @@ public class Menu {
                 
                 if(confirm == 'y'){
                     System.out.println("Order confirmed: \n ---------------------");
-                    System.out.println( cars.getBrand(purchasenum - 1) +" " + cars.getModel(purchasenum - 1 ) + "is now being delivered");
+                    System.out.println( cars.getBrand(purchasenum - 1) +" " + cars.getModel(purchasenum - 1 )+ "\n  Imported from" +cars.getCountry(purchasenum - 1 ) + " is now being delivered\n--------------");
                     double newBalance = paymentMethods.getBalanceCash(username) - total;
                     System.out.println(username + "'s new cash balance is $" + newBalance);
                    
@@ -158,7 +158,7 @@ public class Menu {
                 
                 if(confirm == 'y'){
                     System.out.println("Order confirmed: \n ---------------------");
-                    System.out.println( cars.getBrand(purchasenum - 1) +" " + cars.getModel(purchasenum - 1 ) + " is now being delivered\n--------------");
+                    System.out.println( cars.getBrand(purchasenum - 1) +" " + cars.getModel(purchasenum - 1 )+ "Imported from" +cars.getCountry(purchasenum - 1 ) + " is now being delivered\n--------------");
                     double newBalance = paymentMethods.getBalanceCredit(username) - total;
                     System.out.println(username + "'s new credit balance is $" + newBalance);
                    

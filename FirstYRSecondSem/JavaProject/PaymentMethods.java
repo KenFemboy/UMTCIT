@@ -101,10 +101,10 @@ public class PaymentMethods {
 
     public boolean canAfford(double cash, double payment){
         if(cash > payment){
-            return false;
+            return true;
         }
         else{
-            return true;
+            return false;
         }
     }
     

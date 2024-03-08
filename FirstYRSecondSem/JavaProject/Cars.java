@@ -32,7 +32,7 @@ public class Cars {
             System.out.println("Make: " + cars[i].getBrand());
             System.out.println("Model: " + cars[i].getModel());
             System.out.println("Price: $" + cars[i].getPrice());
-            System.out.println("Country: " + cars[i].getCountry());
+            System.out.println("Country of Origin: " + cars[i].getCountry());
             System.out.println();
         }
     }  
