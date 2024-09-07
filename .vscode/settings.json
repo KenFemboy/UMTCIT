@@ -4,6 +4,10 @@
         "FirstYRSecondSem/ArrayListActivityFile",
         "FirstYRSecondSem",
         "FirstYRFirstSem",
-        "SecondYRFirstSem/CCE105"
+        "SecondYRFirstSem/CCE105",
+        "lib"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\student\\Documents\\GitHub\\UMTCIT\\lib\\junit-platform-console-standalone-1.10.2.jar"
     ]
 }
