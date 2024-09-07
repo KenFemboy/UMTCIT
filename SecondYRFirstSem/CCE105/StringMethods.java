@@ -1,10 +1,15 @@
 import java.util.*;
 public class StringMethods {
     public static void main(String[] args) {
-        String str = "word";
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Sentence: ");
+        String str = input.nextLine();
 
-        for(int i = 0; i < str.length(); i++){
-            System.out.println(str.charAt(i));
+        String[] words = str.split(" ");
+        for(int i = 0; i < words.length; i++){
+            System.out.println(words[i]);
+            System.out.println(words[i].charAt(i));
+
         }
     }
 }
