@@ -9,5 +9,21 @@
     ],
     "java.project.referencedLibraries": [
         "c:\\Users\\student\\Documents\\GitHub\\UMTCIT\\lib\\junit-platform-console-standalone-1.10.2.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "KenSQL",
+            "database": "StudentInfo",
+            "username": "root",
+            "askForPassword": true
+        }
     ]
 }
