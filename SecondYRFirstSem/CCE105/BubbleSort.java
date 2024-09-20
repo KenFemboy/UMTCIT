@@ -21,13 +21,21 @@ public class BubbleSort{
         
         System.out.print("Enter input:  ");
         
-        int n = input.nextLine().split(" ").length;
-        int[] arr = new int[n];
         
-        for(int i = 0; i < n; i++){
-            arr[i] = input.nextInt();
-            
+
+        
+        String[] tokens = input.nextLine().split(" ");
+
+        
+        int n = tokens.length;
+        int[] arr = new int[n];
+
+        
+        for (int i = 0; i < n; i++) {
+            arr[i] = Integer.parseInt(tokens[i]);
         }
+
+       
         
         BubbleSort(arr);
         System.out.println("Sorted array: ");
