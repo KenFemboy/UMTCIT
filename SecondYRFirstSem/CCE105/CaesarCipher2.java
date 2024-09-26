@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CaesarCipher {
+public class CaesarCipher2{
     
     // Method to encrypt a message
     public static String encrypt(String text, int shift) {
