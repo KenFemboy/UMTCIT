@@ -87,7 +87,7 @@ public class SortAlgo{
 
         
         for(int output: arr){
-        System.out.print(output);
+        System.out.print(output + " ");
         }
     }
     }
