@@ -20,7 +20,7 @@ public class SortAlgo{
             break;
 
             case 3:
-            
+            InsertionSort();
             break;
 
             case 4:
@@ -90,7 +90,52 @@ public class SortAlgo{
         System.out.print(output + " ");
         }
     }
-    }
+    
+    public static void InsertionSort(){
 
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter numbers to arrange: ");
+        String[] token = input.nextLine().split(" ");
+        int n = token.length;
+        int[] arr = new int[n];
         
+        for(int k = 0; k < n; k++){
+            arr[k] = Integer.parseInt(token[k]);
+        }
+
+        for (int i = 0; i < n; i++){
+            int key = arr[i];
+            int j = i - 1;
+                while( j >= 0 && arr[j] > key){
+                    arr[j+1] = arr[j];
+                    j = j -1;
+                }
+                arr[j+1] = key;
+        }
+
+        for(int sorted:arr){
+            System.out.print(sorted + " ");
+        }
+            
+        }
+    
+    public static void QuickSort(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter numbers to arrange: ");
+        String[] data = input.nextLine().split(" ");
+        int n = data.length;
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = Integer.parseInt(data[i]);
+        }
+
+        System.out.print("Nah ");
+
+    }
+    }
+        
+
+
+    
     
