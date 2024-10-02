@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class sequence{
+public class LabExam2nd{
     
         public static void BubbleSort(int[] arr){
     
