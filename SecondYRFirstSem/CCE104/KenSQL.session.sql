@@ -1,7 +1,3 @@
-CREATE DATABASE StudentInfo;
-
-USE StudentInfo;
-
 CREATE TABLE StudentInformation(
     StudentID INT,
     FirstName varchar(255),
