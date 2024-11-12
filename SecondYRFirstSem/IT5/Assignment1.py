@@ -1,5 +1,5 @@
 grade = int(input("Enter your grade: "))
-#Charles Kent Labrador
+
 if grade >= 96:
     print("Conversion: 4.0")
     print("Grade Description: A || High Distinction")
