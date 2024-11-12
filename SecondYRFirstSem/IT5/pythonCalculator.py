@@ -14,7 +14,7 @@ print("8. Sine\n")
 print("9. Cosine\n")
 print("10 Tangent\n")
 print("11. Logarithm (natural)\n")
-print("12. Logaritm (bse 10)\n")
+print("12. Logaritm (base 10)\n")
 print("13. Exit\n")
 
 choice = input("Enter choice (1-13): ")
@@ -64,6 +64,8 @@ elif choice == 12:
     print("Result: ", math.log(num1, 10))
 elif choice == 13:
     print("Program Terminated")
+else:
+    print("Try again")
 
 
 
