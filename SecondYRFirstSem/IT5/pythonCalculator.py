@@ -60,7 +60,7 @@ elif choice == 11:
     print("Result: ", math.log(num1))
 elif choice == 12:
     num1 = float(input("Enter a number: "))
-    print("Result: ", math.log(num1, 10))))
+    print("Result: ", math.log(num1, 10))
 elif choice == 13:
     print("Program Terminated")
 else:
