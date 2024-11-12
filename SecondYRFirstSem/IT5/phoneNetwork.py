@@ -1,4 +1,4 @@
-cpnum= input("Enter your Cellphone number")
+cpnum= input("Enter your Cellphone number: ")
 cpnumInt = int(cpnum[2:4])
 if (len(cpnum)> 11 or len(cpnum) < 11):
     print("Incorrect cellphone number format")
