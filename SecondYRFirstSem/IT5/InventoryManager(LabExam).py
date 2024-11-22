@@ -40,6 +40,6 @@ for i in range(len(itemname)):
         inStock += 1
         status = "In Stock"
 
-print(f"Out of Stock: {outofStock}")
-print(f"Low Stock: {lowStock}")
-print(f"In Stock: {inStock}")
+print(f"Out of Stock: {outofStock} Items")
+print(f"Low Stock: {lowStock} items")
+print(f"In Stock: {inStock} items")
