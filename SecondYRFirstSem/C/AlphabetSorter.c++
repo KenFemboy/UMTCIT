@@ -22,13 +22,36 @@ int main() {
         char ch;
         printf("Enter a letter (A-Z or a-z), use '@' to finish: ");
         scanf(" %c", &ch);
-        if(ch == '@'){
+        if(ch == 64 || (ch >= 33 && ch <= 47)){
             break;
         }
+        if(!isalpha(ch)){
+            printf("Error please try again\n");
+            continue;
+        }
         if (islower(ch)) {
-            lowerCaseList[lowerCount++] = ch;
-        } else if (isupper(ch)) {
-            upperCaseList[upperCount++] = ch;
+            int isDuplicate = 0;
+            for (int i = 0; i < lowerCount; i++) {
+                if (lowerCaseList[i] == ch) {
+                    isDuplicate = 1;
+                    break;
+                }
+            }
+            if(!isDuplicate){
+                lowerCaseList[lowerCount++] = ch;
+            }
+        } 
+        else if (isupper(ch)) {
+            int isDuplicate = 0;
+            for (int i = 0; i < upperCount; i++) {
+                if (upperCaseList[i] == ch) {
+                    isDuplicate = 1;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                upperCaseList[upperCount++] = ch;
+            }
         }
     }
     sortArray(lowerCaseList, lowerCount);
