@@ -8,8 +8,6 @@ void randomizeNumList(int *list, int size){
     for (int i = size - 1; i > 0; i--) {
         
         int j = rand() % (i + 1);
-
-       
         int temp = list[i];
         list[i] = list[j];
         list[j] = temp;
@@ -103,7 +101,7 @@ int main() {
             reverseFirstN(numlist,size,numInput);
             printList(numlist, size);
             
-            if(compareLists(numlist, correctnumlist,size,size)){
+            if(compareLists(numlist, correctnumlist,size)){
                 printf("You won in %d moves!\n",attempt);
                 break;
             }
