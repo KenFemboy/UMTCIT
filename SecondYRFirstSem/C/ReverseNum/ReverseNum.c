@@ -30,12 +30,8 @@ void reverseFirstN(int *list, int size, int n) {
         end--;
     }
 }
-bool compareLists(int *list1, int *list2, int size1, int size2) {
-    if (size1 != size2) {
-        return false;
-    }
-
-    for (int i = 0; i < size1; i++) {
+bool compareLists(int *list1, int *list2, int size) {
+    for (int i = 0; i < size; i++) {
         if (list1[i] != list2[i]) {
             return false;
         }
@@ -112,9 +108,7 @@ int main() {
             
             
         }
-        
-        
-        
+  
         while(1){
             printf("\n TRY AGAIN?[YES/NO]: ");
             scanf("%s", tryagain);
