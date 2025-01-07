@@ -1,0 +1,1 @@
+nitialize pygame mixer
