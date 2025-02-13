@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h1, h2{
+    color: pink;
+    
+}
+ol, ul{
+    text-align: justify;
+    margin: 0 30%;
+}
